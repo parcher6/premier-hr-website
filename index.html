@@ -6,451 +6,301 @@
   <title>PREMIER HR PTE. LTD. | Singapore Employment Agency</title>
   <meta
     name="description"
-    content="PREMIER HR PTE. LTD. provides recruitment, work pass support, workforce placement, and AI assistant solutions in Singapore."
+    content="PREMIER HR PTE. LTD. is a Singapore employment agency providing recruitment, work pass support, workforce solutions, AI phone robot and WhatsApp automation."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="lang-en">
   <header class="site-header">
-    <div class="top-bar">
-      <div class="container top-bar-inner">
-        <p><span>Hot Line</span> <a href="tel:19025082207">19025082207</a></p>
-        <div class="language-links">
-          <button class="language-toggle is-active" type="button" data-lang="en">English</button>
-          <button class="language-toggle" type="button" data-lang="zh">&#20013;&#25991;</button>
-          <a href="#contact">Contact</a>
+    <div class="notice-bar">
+      <div class="container notice-inner">
+        <p><span data-i18n="noticeLabel">Licensed Employment Agency</span> EA Licence No. 26C3492</p>
+        <div class="top-actions">
+          <a href="tel:19025082207">19025082207</a>
+          <button class="language-button is-active" type="button" data-lang="en">English</button>
+          <button class="language-button" type="button" data-lang="zh">&#20013;&#25991;</button>
         </div>
       </div>
     </div>
 
-    <div class="nav-wrap">
+    <div class="nav-shell">
       <div class="container nav-inner">
         <a class="brand" href="#home" aria-label="PREMIER HR home">
           <span class="brand-mark">P</span>
-          <span>
+          <span class="brand-text">
             <strong>PREMIER HR</strong>
-            <small>Employment Agency</small>
+            <small data-i18n="brandSub">Singapore Employment Agency</small>
           </span>
         </a>
 
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#ai-robots">AI Robots</a>
-          <a href="#jobs">Job Support</a>
-          <a href="#process">Process</a>
-          <a href="#faq">FAQ</a>
-          <a href="#news">Updates</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" data-i18n="navHome">Home</a>
+          <a href="#compliance" data-i18n="navCompliance">Compliance</a>
+          <a href="#services" data-i18n="navServices">Services</a>
+          <a href="#ai" data-i18n="navAi">AI Robots</a>
+          <a href="#roles" data-i18n="navRoles">Workforce</a>
+          <a href="#process" data-i18n="navProcess">Process</a>
+          <a href="#faq" data-i18n="navFaq">FAQ</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
   <main id="home">
-    <section class="hero">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">Licensed Employment Agency in Singapore</p>
-        <h1>Workforce Solutions for Singapore Employers</h1>
-        <p class="hero-copy">
-          PREMIER HR helps companies handle candidate sourcing, interview coordination,
-          work pass support, and AI-powered communication follow-up with a compliant service process.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#services">Explore Services</a>
+    <section class="hero-section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Singapore Workforce Partner</p>
+          <h1 data-i18n="heroTitle">Workforce Solutions for Singapore Employers</h1>
+          <p data-i18n="heroText">
+            PREMIER HR helps employers manage candidate sourcing, interview coordination,
+            work pass support, workforce follow-up and AI-powered communication.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services" data-i18n="heroPrimary">View Services</a>
+            <a class="btn btn-secondary" href="#ai" data-i18n="heroSecondary">Explore AI Robots</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick contact">
+          <span data-i18n="heroCardLabel">Employer Enquiry</span>
+          <h2 data-i18n="heroCardTitle">Need workers or HR support?</h2>
+          <p data-i18n="heroCardText">Tell us your hiring need and our team will follow up with the next practical step.</p>
           <a
-            class="btn btn-outline"
-            href="https://wa.me/19025082207?text=Hello%20PREMIER%20HR%2C%20I%20would%20like%20to%20know%20more%20about%20your%20recruitment%20services."
+            class="btn btn-whatsapp"
+            href="https://wa.me/19025082207?text=Hello%20PREMIER%20HR%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="whatsappCta"
           >
-            WhatsApp Us
+            WhatsApp Consultation
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="quick-search" aria-label="Quick service search">
-      <div class="container search-panel">
-        <div>
-          <span class="panel-label">Quick Search</span>
-          <h2>Find the right HR support</h2>
-        </div>
-        <form class="search-form" action="#services">
-          <input type="search" name="keyword" placeholder="Search recruitment, work pass, AI assistant..." />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="stats-strip">
-      <div class="container stats-grid">
-        <div>
-          <strong>26C3492</strong>
-          <span>EA Licence No.</span>
-        </div>
-        <div>
-          <strong>202500393W</strong>
-          <span>UEN</span>
-        </div>
-        <div>
-          <strong>Non-FDW</strong>
-          <span>Comprehensive Licence</span>
-        </div>
-        <div>
-          <strong>AI + HR</strong>
-          <span>Communication Support</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="assurance-section">
-      <div class="container assurance-grid">
-        <div class="assurance-heading">
-          <span class="section-kicker">Why Choose Us</span>
-          <h2>Built for employers who need clear, responsive HR support.</h2>
-        </div>
-        <div class="assurance-card">
-          <strong>01</strong>
-          <h3>Clear Service Scope</h3>
-          <p>Recruitment, interview coordination, work pass support, and after-service follow-up are separated into simple steps.</p>
-        </div>
-        <div class="assurance-card">
-          <strong>02</strong>
-          <h3>Fast Communication</h3>
-          <p>WhatsApp-first contact and AI assistant workflows help reduce slow replies and missed reminders.</p>
-        </div>
-        <div class="assurance-card">
-          <strong>03</strong>
-          <h3>Visible Compliance</h3>
-          <p>Licence and company registration details are placed clearly for quick employer review.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about-section">
-      <div class="container two-column">
-        <div class="image-block">
-          <img
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1100&q=80"
-            alt="Business professionals discussing recruitment solutions"
-          />
-          <div class="image-badge">
-            <strong>Singapore</strong>
-            <span>Workforce Partner</span>
-          </div>
-        </div>
-        <div class="section-copy">
-          <span class="section-kicker">About PREMIER HR</span>
-          <h2>Professional recruitment support with a clear compliance foundation.</h2>
-          <p>
-            PREMIER HR PTE. LTD. is a Singapore-based human resource service provider.
-            We support employers with practical workforce solutions, from candidate recommendation
-            and interview arrangement to work pass application coordination and after-service follow-up.
-          </p>
-          <div class="feature-list">
-            <div>
-              <h3>Compliant</h3>
-              <p>Licensed employment agency information is clearly presented for employer confidence.</p>
-            </div>
-            <div>
-              <h3>Responsive</h3>
-              <p>Candidate and client communication is handled with structured follow-up.</p>
-            </div>
-            <div>
-              <h3>Technology-ready</h3>
-              <p>AI call and work assistant support can help teams improve daily communication efficiency.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section section-tint">
-      <div class="container">
-        <div class="section-title">
-          <span>Our Services</span>
-          <h2>&#25105;&#20204;&#30340;&#26381;&#21153;</h2>
-          <p>Service modules inspired by overseas labour agency websites, adapted for PREMIER HR.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card" data-service="recruitment candidate resume">
-            <span class="service-icon">01</span>
-            <h3>Candidate Recommendation</h3>
-            <p>Shortlist suitable candidates and prepare profiles for employer review.</p>
-          </article>
-          <article class="service-card" data-service="interview arrangement schedule">
-            <span class="service-icon">02</span>
-            <h3>Interview Arrangement</h3>
-            <p>Coordinate interview timing, reminders, communication, and confirmation.</p>
-          </article>
-          <article class="service-card" data-service="work pass permit visa singapore">
-            <span class="service-icon">03</span>
-            <h3>Work Pass Support</h3>
-            <p>Support work pass preparation and related application communication.</p>
-          </article>
-          <article class="service-card" data-service="after service follow up support">
-            <span class="service-icon">04</span>
-            <h3>After-Service Support</h3>
-            <p>Follow up on placement status and help employers handle service questions.</p>
-          </article>
-          <article class="service-card" data-service="ai call assistant work assistant">
-            <span class="service-icon">05</span>
-            <h3>AI Call Assistant</h3>
-            <p>Use AI communication support for reminders, screening notes, and customer follow-up.</p>
-          </article>
-          <article class="service-card" data-service="workforce solution employer">
-            <span class="service-icon">06</span>
-            <h3>Workforce Solutions</h3>
-            <p>Build practical staffing support plans based on the employer's operational needs.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="ai-robots" class="section ai-robots-section">
-      <div class="container ai-robots-layout">
-        <div class="ai-robots-copy">
-          <span class="section-kicker">AI Automation</span>
-          <h2>AI phone robot and WhatsApp auto-reply robot for faster customer communication.</h2>
-          <p>
-            Build a smarter front desk for recruitment communication. The AI phone robot can handle call reminders,
-            initial enquiry collection, and follow-up notes, while the WhatsApp auto-reply robot helps answer common
-            questions and route serious employer enquiries to the team.
-          </p>
-          <div class="ai-robot-actions">
-            <a class="btn btn-primary" href="#contact">Request AI Demo</a>
-            <a class="btn btn-outline-dark" href="#faq">View FAQ</a>
-          </div>
-        </div>
-
-        <div class="ai-robot-panel">
-          <div class="signal-card phone-robot">
-            <span>01</span>
-            <h3>Automatic Phone Robot</h3>
-            <p>Call reminders, enquiry collection, follow-up prompts, and structured call notes.</p>
-          </div>
-          <div class="signal-card whatsapp-robot">
-            <span>02</span>
-            <h3>WhatsApp Auto Reply Robot</h3>
-            <p>Instant replies, FAQ responses, contact capture, and handoff to human service staff.</p>
-          </div>
-          <div class="ai-dashboard">
-            <div>
-              <strong>24/7</strong>
-              <small>Always-on reply</small>
-            </div>
-            <div>
-              <strong>AI</strong>
-              <small>Smart routing</small>
-            </div>
-            <div>
-              <strong>HR</strong>
-              <small>Service workflow</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="jobs" class="section jobs-section">
-      <div class="container jobs-layout">
-        <div>
-          <div class="section-title align-left">
-            <span>Job Support</span>
-            <h2>Popular workforce request types</h2>
-          </div>
-          <div class="job-list">
-            <article class="job-item">
-              <span class="job-tag">Singapore</span>
-              <h3>Service & Operations Roles</h3>
-              <p>Candidate sourcing, screening, and interview coordination for service teams.</p>
-              <a href="#contact">Ask for support</a>
-            </article>
-            <article class="job-item">
-              <span class="job-tag">Singapore</span>
-              <h3>Skilled Worker Placement</h3>
-              <p>Structured recruitment process support for employers seeking reliable workers.</p>
-              <a href="#contact">Ask for support</a>
-            </article>
-            <article class="job-item">
-              <span class="job-tag">AI Support</span>
-              <h3>Candidate Reminder Workflow</h3>
-              <p>AI-assisted reminders and follow-up scripts for faster communication.</p>
-              <a href="#contact">Ask for support</a>
-            </article>
-          </div>
-        </div>
-
-        <aside class="credential-panel">
-          <img
-            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80"
-            alt="Recruitment consultation meeting"
-          />
-          <div>
-            <h3>Licence & Compliance</h3>
-            <ul>
-              <li>EA Licence No.: 26C3492</li>
-              <li>UEN: 202500393W</li>
-              <li>Licence Type: Comprehensive Non-FDW</li>
-              <li>Scope excludes foreign domestic workers.</li>
-            </ul>
-          </div>
         </aside>
+      </div>
+    </section>
+
+    <section id="compliance" class="section compliance-section">
+      <div class="container">
+        <div class="section-heading compact">
+          <span data-i18n="complianceKicker">Compliance First</span>
+          <h2 data-i18n="complianceTitle">Clear licence information for employer confidence.</h2>
+        </div>
+
+        <div class="compliance-grid">
+          <article>
+            <strong>26C3492</strong>
+            <span data-i18n="statEa">EA Licence No.</span>
+          </article>
+          <article>
+            <strong>202500393W</strong>
+            <span data-i18n="statUen">UEN</span>
+          </article>
+          <article>
+            <strong>Non-FDW</strong>
+            <span data-i18n="statLicence">Comprehensive Licence</span>
+          </article>
+          <article>
+            <strong data-i18n="statScopeValue">All Workers</strong>
+            <span data-i18n="statScope">Except foreign domestic workers</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-hub">
+      <div class="container hub-grid">
+        <div class="hub-intro">
+          <span data-i18n="hubKicker">Service Directory</span>
+          <h2 data-i18n="hubTitle">Find the right support quickly.</h2>
+          <p data-i18n="hubText">
+            Inspired by official service portals: clear categories, direct actions and no confusing pathways.
+          </p>
+        </div>
+        <div class="hub-links">
+          <a href="#services"><strong data-i18n="hubRecruitment">Recruitment</strong><span data-i18n="hubRecruitmentText">Candidate sourcing and interview coordination</span></a>
+          <a href="#services"><strong data-i18n="hubWorkPass">Work Pass</strong><span data-i18n="hubWorkPassText">Document preparation and application support</span></a>
+          <a href="#ai"><strong data-i18n="hubAi">AI Robots</strong><span data-i18n="hubAiText">Phone reminders and WhatsApp auto reply</span></a>
+          <a href="#contact"><strong data-i18n="hubContact">Contact</strong><span data-i18n="hubContactText">WhatsApp consultation and employer enquiry</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-heading">
+          <span data-i18n="servicesKicker">Core Services</span>
+          <h2 data-i18n="servicesTitle">HR services built around employer needs.</h2>
+          <p data-i18n="servicesText">A practical service stack for hiring, communication and workforce follow-up.</p>
+        </div>
+
+        <div class="cards-grid service-cards">
+          <article class="service-card">
+            <span>01</span>
+            <h3 data-i18n="service1Title">Candidate Recommendation</h3>
+            <p data-i18n="service1Text">Shortlist suitable candidates and prepare profiles for employer review.</p>
+          </article>
+          <article class="service-card">
+            <span>02</span>
+            <h3 data-i18n="service2Title">Interview Arrangement</h3>
+            <p data-i18n="service2Text">Coordinate interview timing, reminders, confirmation and follow-up.</p>
+          </article>
+          <article class="service-card">
+            <span>03</span>
+            <h3 data-i18n="service3Title">Work Pass Support</h3>
+            <p data-i18n="service3Text">Assist with work pass preparation and related communication.</p>
+          </article>
+          <article class="service-card">
+            <span>04</span>
+            <h3 data-i18n="service4Title">After-Service Follow-Up</h3>
+            <p data-i18n="service4Text">Maintain placement follow-up and help employers handle service questions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section ai-section">
+      <div class="container ai-grid">
+        <div class="ai-copy">
+          <span data-i18n="aiKicker">AI Communication Automation</span>
+          <h2 data-i18n="aiTitle">AI phone robot and WhatsApp auto-reply robot.</h2>
+          <p data-i18n="aiText">
+            Reduce missed calls, late replies and repeated questions. PREMIER HR can support
+            communication workflows for candidate reminders, employer enquiries and daily follow-up.
+          </p>
+          <div class="ai-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="aiPrimary">Request AI Demo</a>
+            <a class="btn btn-secondary-light" href="#faq" data-i18n="aiSecondary">Read FAQ</a>
+          </div>
+        </div>
+
+        <div class="ai-product-stack">
+          <article class="ai-product">
+            <span class="pulse-dot"></span>
+            <small>01</small>
+            <h3 data-i18n="aiPhoneTitle">Automatic Phone Robot</h3>
+            <p data-i18n="aiPhoneText">Call reminders, enquiry collection, follow-up prompts and structured call notes.</p>
+          </article>
+          <article class="ai-product">
+            <span class="pulse-dot green"></span>
+            <small>02</small>
+            <h3 data-i18n="aiWhatsappTitle">WhatsApp Auto Reply Robot</h3>
+            <p data-i18n="aiWhatsappText">Instant replies, FAQ responses, contact capture and handoff to human staff.</p>
+          </article>
+          <div class="ai-metrics">
+            <div><strong>24/7</strong><span data-i18n="aiMetric1">Always-on reply</span></div>
+            <div><strong>AI</strong><span data-i18n="aiMetric2">Smart routing</span></div>
+            <div><strong>HR</strong><span data-i18n="aiMetric3">Service workflow</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roles" class="section roles-section">
+      <div class="container roles-layout">
+        <div class="section-heading align-left">
+          <span data-i18n="rolesKicker">Workforce Types</span>
+          <h2 data-i18n="rolesTitle">Popular employer request categories.</h2>
+        </div>
+        <div class="role-list">
+          <article><h3 data-i18n="role1Title">Service & Operations</h3><p data-i18n="role1Text">Support for service teams, daily operations and customer-facing roles.</p></article>
+          <article><h3 data-i18n="role2Title">Retail & Hospitality</h3><p data-i18n="role2Text">Candidate sourcing and interview coordination for retail, F&amp;B and hospitality teams.</p></article>
+          <article><h3 data-i18n="role3Title">Skilled Worker Support</h3><p data-i18n="role3Text">Structured recruitment support for employers seeking reliable skilled workers.</p></article>
+        </div>
       </div>
     </section>
 
     <section id="process" class="section process-section">
       <div class="container">
-        <div class="section-title">
-          <span>How We Work</span>
-          <h2>Clear steps for employer requests</h2>
+        <div class="section-heading">
+          <span data-i18n="processKicker">Service Process</span>
+          <h2 data-i18n="processTitle">A clear path from requirement to follow-up.</h2>
         </div>
-        <div class="process-grid">
-          <div>
-            <span>1</span>
-            <h3>Requirement Check</h3>
-            <p>Understand role, schedule, work pass needs, and expected hiring timeline.</p>
-          </div>
-          <div>
-            <span>2</span>
-            <h3>Candidate Matching</h3>
-            <p>Recommend candidates and arrange communication for employer review.</p>
-          </div>
-          <div>
-            <span>3</span>
-            <h3>Application Support</h3>
-            <p>Assist with required documentation and work pass-related coordination.</p>
-          </div>
-          <div>
-            <span>4</span>
-            <h3>Follow-Up</h3>
-            <p>Maintain after-service communication and help close open issues.</p>
-          </div>
+        <div class="process-timeline">
+          <article><span>1</span><h3 data-i18n="step1Title">Requirement Check</h3><p data-i18n="step1Text">Clarify role scope, schedule, salary range and expected timeline.</p></article>
+          <article><span>2</span><h3 data-i18n="step2Title">Candidate Matching</h3><p data-i18n="step2Text">Recommend suitable candidates and coordinate employer review.</p></article>
+          <article><span>3</span><h3 data-i18n="step3Title">Application Support</h3><p data-i18n="step3Text">Assist with work pass-related preparation and communication.</p></article>
+          <article><span>4</span><h3 data-i18n="step4Title">After-Service</h3><p data-i18n="step4Text">Follow up on placement status and open service questions.</p></article>
         </div>
       </div>
     </section>
 
     <section id="faq" class="section faq-section">
       <div class="container faq-layout">
-        <div>
-          <span class="section-kicker">FAQ</span>
-          <h2>Common questions from employers</h2>
-          <p>
-            These quick answers help visitors understand what PREMIER HR can support before they contact the team.
-          </p>
+        <div class="section-heading align-left">
+          <span data-i18n="faqKicker">FAQ</span>
+          <h2 data-i18n="faqTitle">Questions employers often ask.</h2>
         </div>
         <div class="faq-list">
           <details open>
-            <summary>Can PREMIER HR support work pass applications?</summary>
-            <p>We can assist with work pass-related preparation and coordination based on employer requirements and applicable rules.</p>
+            <summary data-i18n="faq1Q">Can PREMIER HR support work pass applications?</summary>
+            <p data-i18n="faq1A">We can assist with work pass-related preparation and coordination based on employer requirements and applicable rules.</p>
           </details>
           <details>
-            <summary>Do you only serve Singapore employers?</summary>
-            <p>The website is positioned for Singapore employment agency services. Employer requests can be discussed through WhatsApp or direct contact.</p>
+            <summary data-i18n="faq2Q">What should employers prepare first?</summary>
+            <p data-i18n="faq2A">Prepare the role scope, salary range, working schedule, preferred start date and any work pass expectations.</p>
           </details>
           <details>
-            <summary>What information should employers prepare first?</summary>
-            <p>Prepare the role scope, salary range, working schedule, preferred start date, and any work pass expectations.</p>
+            <summary data-i18n="faq3Q">What can the AI robots help with?</summary>
+            <p data-i18n="faq3A">They can support reminders, enquiry collection, FAQ replies, contact capture and handoff to human staff.</p>
           </details>
           <details>
-            <summary>What can the AI assistant help with?</summary>
-            <p>AI assistant workflows can help with candidate reminders, follow-up messages, call notes, and daily communication tasks.</p>
+            <summary data-i18n="faq4Q">Is PREMIER HR a MOM department?</summary>
+            <p data-i18n="faq4A">No. PREMIER HR is a private employment agency. MOM information should be checked through official MOM channels when needed.</p>
           </details>
         </div>
-      </div>
-    </section>
-
-    <section id="news" class="section section-tint">
-      <div class="container">
-        <div class="section-title">
-          <span>Updates</span>
-          <h2>HR knowledge & company notes</h2>
-        </div>
-        <div class="news-grid">
-          <article class="news-card">
-            <time datetime="2026-06-01">06/01 2026</time>
-            <h3>How employers can prepare recruitment requirements clearly</h3>
-            <p>Role scope, salary range, schedule, and work pass expectations make matching faster.</p>
-          </article>
-          <article class="news-card">
-            <time datetime="2026-06-01">06/01 2026</time>
-            <h3>Using AI assistants for candidate reminders</h3>
-            <p>Structured reminders can reduce missed interviews and improve follow-up speed.</p>
-          </article>
-          <article class="news-card">
-            <time datetime="2026-06-01">06/01 2026</time>
-            <h3>Why compliance details should be visible on HR websites</h3>
-            <p>Licence information helps employers quickly verify the service provider.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="partner-section">
-      <div class="container partner-row">
-        <span>Employer Partners</span>
-        <strong>Service</strong>
-        <strong>Operations</strong>
-        <strong>Retail</strong>
-        <strong>Hospitality</strong>
-        <strong>Admin</strong>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
       <div class="container contact-grid">
-        <div>
-          <span class="section-kicker">Contact PREMIER HR</span>
-          <h2>Talk to us about recruitment or workforce support.</h2>
-          <p>
-            Share your hiring needs, work pass questions, or AI assistant interest.
-            Our team will follow up with the next practical step.
-          </p>
+        <div class="contact-copy">
+          <span data-i18n="contactKicker">Contact</span>
+          <h2 data-i18n="contactTitle">Talk to PREMIER HR about your hiring or AI automation needs.</h2>
+          <p data-i18n="contactText">Send your enquiry through WhatsApp. The form below will help create a clearer message for faster follow-up.</p>
+          <div class="contact-details">
+            <p><strong data-i18n="contactCompanyLabel">Company</strong> PREMIER HR PTE. LTD.</p>
+            <p><strong data-i18n="contactAddressLabel">Address</strong> 101 Upper Cross Street, #05-54 People's Park Centre, Singapore 058357</p>
+            <p><strong data-i18n="contactPhoneLabel">Phone / WhatsApp</strong> <a href="tel:19025082207">19025082207</a></p>
+            <p><strong data-i18n="contactEmailLabel">Email</strong> <span data-i18n="contactEmailValue">To be confirmed</span></p>
+          </div>
         </div>
-        <div class="contact-card">
-          <p><strong>Company</strong> PREMIER HR PTE. LTD.</p>
-          <p><strong>Address</strong> 101 Upper Cross Street, #05-54 People's Park Centre, Singapore 058357</p>
-          <p><strong>Phone / WhatsApp</strong> <a href="tel:19025082207">19025082207</a></p>
-          <p><strong>Email</strong> To be confirmed</p>
-          <form class="contact-form">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              <span>Service Needed</span>
-              <select name="service">
-                <option>Recruitment support</option>
-                <option>Work pass support</option>
-                <option>AI assistant</option>
-                <option>General enquiry</option>
-              </select>
-            </label>
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="4" placeholder="Briefly describe what you need"></textarea>
-            </label>
-          </form>
+
+        <form class="contact-form">
+          <label>
+            <span data-i18n="formName">Name</span>
+            <input type="text" name="name" data-i18n-placeholder="formNamePlaceholder" placeholder="Your name" />
+          </label>
+          <label>
+            <span data-i18n="formService">Service Needed</span>
+            <select name="service">
+              <option data-i18n="optionRecruitment">Recruitment support</option>
+              <option data-i18n="optionWorkPass">Work pass support</option>
+              <option data-i18n="optionAiPhone">AI phone robot</option>
+              <option data-i18n="optionWhatsapp">WhatsApp auto reply robot</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="formMessage">Message</span>
+            <textarea name="message" rows="5" data-i18n-placeholder="formMessagePlaceholder" placeholder="Briefly describe what you need"></textarea>
+          </label>
           <a
-            class="btn btn-primary full-width"
+            class="btn btn-primary form-whatsapp"
             href="https://wa.me/19025082207?text=Hello%20PREMIER%20HR%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="formWhatsapp"
           >
             Message on WhatsApp
           </a>
-        </div>
+        </form>
       </div>
     </section>
   </main>
@@ -460,27 +310,27 @@
       <div>
         <a class="brand footer-brand" href="#home">
           <span class="brand-mark">P</span>
-          <span>
+          <span class="brand-text">
             <strong>PREMIER HR</strong>
-            <small>Employment Agency</small>
+            <small data-i18n="brandSubFooter">Singapore Employment Agency</small>
           </span>
         </a>
-        <p>Recruitment, workforce support, and AI-assisted communication for Singapore employers.</p>
+        <p data-i18n="footerText">Recruitment, workforce support and AI communication automation for Singapore employers.</p>
       </div>
       <div>
-        <h3>Helpful Links</h3>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#jobs">Job Support</a>
-        <a href="#contact">Contact</a>
+        <h3 data-i18n="footerLinks">Quick Links</h3>
+        <a href="#services" data-i18n="navServicesFooter">Services</a>
+        <a href="#ai" data-i18n="navAiFooter">AI Robots</a>
+        <a href="#faq" data-i18n="navFaqFooter">FAQ</a>
+        <a href="#contact" data-i18n="navContactFooter">Contact</a>
       </div>
       <div>
-        <h3>Compliance</h3>
+        <h3 data-i18n="footerCompliance">Compliance</h3>
         <p>EA Licence No.: 26C3492</p>
         <p>UEN: 202500393W</p>
       </div>
     </div>
-    <div class="container copyright">
+    <div class="container footer-bottom">
       <p>&copy; 2026 PREMIER HR PTE. LTD. All Rights Reserved.</p>
     </div>
   </footer>
@@ -490,11 +340,11 @@
     href="https://wa.me/19025082207?text=Hello%20PREMIER%20HR%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
     target="_blank"
     rel="noopener noreferrer"
+    data-i18n="floatingWhatsapp"
   >
     WhatsApp
   </a>
-
-  <button class="go-top" type="button" aria-label="Back to top">&uarr;</button>
+  <button class="back-top" type="button" aria-label="Back to top">&uarr;</button>
 
   <script src="main.js"></script>
 </body>
