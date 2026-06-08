@@ -30,6 +30,7 @@ const translations = {
       '.main-nav a[href="#home"]': "Home",
       '.main-nav a[href="#about"]': "About",
       '.main-nav a[href="#services"]': "Services",
+      '.main-nav a[href="#ai-robots"]': "AI Robots",
       '.main-nav a[href="#jobs"]': "Job Support",
       '.main-nav a[href="#process"]': "Process",
       '.main-nav a[href="#faq"]': "FAQ",
@@ -92,6 +93,22 @@ const translations = {
       ".service-card:nth-of-type(6) h3": "Workforce Solutions",
       ".service-card:nth-of-type(6) p":
         "Build practical staffing support plans based on the employer's operational needs.",
+      "#ai-robots .section-kicker": "AI Automation",
+      "#ai-robots .ai-robots-copy h2":
+        "AI phone robot and WhatsApp auto-reply robot for faster customer communication.",
+      "#ai-robots .ai-robots-copy p":
+        "Build a smarter front desk for recruitment communication. The AI phone robot can handle call reminders, initial enquiry collection, and follow-up notes, while the WhatsApp auto-reply robot helps answer common questions and route serious employer enquiries to the team.",
+      ".ai-robot-actions .btn-primary": "Request AI Demo",
+      ".ai-robot-actions .btn-outline-dark": "View FAQ",
+      ".ai-robot-panel .signal-card:nth-child(1) h3": "Automatic Phone Robot",
+      ".ai-robot-panel .signal-card:nth-child(1) p":
+        "Call reminders, enquiry collection, follow-up prompts, and structured call notes.",
+      ".ai-robot-panel .signal-card:nth-child(2) h3": "WhatsApp Auto Reply Robot",
+      ".ai-robot-panel .signal-card:nth-child(2) p":
+        "Instant replies, FAQ responses, contact capture, and handoff to human service staff.",
+      ".ai-dashboard div:nth-child(1) small": "Always-on reply",
+      ".ai-dashboard div:nth-child(2) small": "Smart routing",
+      ".ai-dashboard div:nth-child(3) small": "Service workflow",
       "#jobs .section-title span": "Job Support",
       "#jobs .section-title h2": "Popular workforce request types",
       ".job-item:nth-child(1) .job-tag": "Singapore",
@@ -227,6 +244,7 @@ const translations = {
       '.main-nav a[href="#home"]': "&#39318;&#39029;",
       '.main-nav a[href="#about"]': "&#20851;&#20110;&#25105;&#20204;",
       '.main-nav a[href="#services"]': "&#26381;&#21153;&#39033;&#30446;",
+      '.main-nav a[href="#ai-robots"]': "AI &#26426;&#22120;&#20154;",
       '.main-nav a[href="#jobs"]': "&#23703;&#20301;&#25903;&#25345;",
       '.main-nav a[href="#process"]': "&#26381;&#21153;&#27969;&#31243;",
       '.main-nav a[href="#faq"]': "&#24120;&#35265;&#38382;&#39064;",
@@ -295,6 +313,22 @@ const translations = {
       ".service-card:nth-of-type(6) h3": "&#20154;&#21147;&#35299;&#20915;&#26041;&#26696;",
       ".service-card:nth-of-type(6) p":
         "&#26681;&#25454;&#38607;&#20027;&#30340;&#36816;&#33829;&#38656;&#27714;&#65292;&#21046;&#23450;&#23454;&#29992;&#30340;&#29992;&#24037;&#25903;&#25345;&#26041;&#26696;&#12290;",
+      "#ai-robots .section-kicker": "AI &#26234;&#33021;&#33258;&#21160;&#21270;",
+      "#ai-robots .ai-robots-copy h2":
+        "AI &#33258;&#21160;&#30005;&#35805;&#26426;&#22120;&#20154;&#19982; WhatsApp &#33258;&#21160;&#22238;&#22797;&#26426;&#22120;&#20154;&#12290;",
+      "#ai-robots .ai-robots-copy p":
+        "&#20026;&#25307;&#32856;&#27807;&#36890;&#25171;&#36896;&#26356;&#26234;&#33021;&#30340;&#21069;&#21488;&#12290;AI &#30005;&#35805;&#26426;&#22120;&#20154;&#21487;&#20197;&#22788;&#29702;&#30005;&#35805;&#25552;&#37266;&#12289;&#21021;&#27493;&#21672;&#35810;&#25910;&#38598;&#21644;&#36319;&#36827;&#35760;&#24405;&#65307;WhatsApp &#33258;&#21160;&#22238;&#22797;&#26426;&#22120;&#20154;&#21487;&#20197;&#22238;&#31572;&#24120;&#35265;&#38382;&#39064;&#65292;&#24182;&#23558;&#37325;&#35201;&#38607;&#20027;&#21672;&#35810;&#36716;&#20132;&#32473;&#22242;&#38431;&#12290;",
+      ".ai-robot-actions .btn-primary": "&#30003;&#35831; AI &#28436;&#31034;",
+      ".ai-robot-actions .btn-outline-dark": "&#26597;&#30475;&#24120;&#35265;&#38382;&#39064;",
+      ".ai-robot-panel .signal-card:nth-child(1) h3": "AI &#33258;&#21160;&#30005;&#35805;&#26426;&#22120;&#20154;",
+      ".ai-robot-panel .signal-card:nth-child(1) p":
+        "&#30005;&#35805;&#25552;&#37266;&#12289;&#21672;&#35810;&#25910;&#38598;&#12289;&#36319;&#36827;&#25552;&#31034;&#21644;&#32467;&#26500;&#21270;&#36890;&#35805;&#35760;&#24405;&#12290;",
+      ".ai-robot-panel .signal-card:nth-child(2) h3": "WhatsApp &#33258;&#21160;&#22238;&#22797;&#26426;&#22120;&#20154;",
+      ".ai-robot-panel .signal-card:nth-child(2) p":
+        "&#21363;&#26102;&#22238;&#22797;&#12289;&#24120;&#35265;&#38382;&#31572;&#12289;&#32852;&#31995;&#20449;&#24687;&#25910;&#38598;&#21644;&#20154;&#24037;&#26381;&#21153;&#36716;&#25509;&#12290;",
+      ".ai-dashboard div:nth-child(1) small": "&#20840;&#22825;&#20505;&#22238;&#22797;",
+      ".ai-dashboard div:nth-child(2) small": "&#26234;&#33021;&#20998;&#27969;",
+      ".ai-dashboard div:nth-child(3) small": "HR &#26381;&#21153;&#27969;&#31243;",
       "#jobs .section-title span": "&#23703;&#20301;&#25903;&#25345;",
       "#jobs .section-title h2": "&#24120;&#35265;&#29992;&#24037;&#38656;&#27714;&#31867;&#22411;",
       ".job-item:nth-child(1) .job-tag": "&#26032;&#21152;&#22369;",
@@ -576,7 +610,7 @@ const applyLanguage = (lang) => {
   updateLanguageButtons(nextLanguage);
   saveLanguage(nextLanguage);
 
-  if (currentSection && sectionTopBefore !== undefined && window.scrollY > 10) {
+  if (currentSection?.id !== "home" && sectionTopBefore !== undefined && window.scrollY > 10) {
     const sectionTopAfter = currentSection.getBoundingClientRect().top;
     window.scrollBy(0, sectionTopAfter - sectionTopBefore);
   }

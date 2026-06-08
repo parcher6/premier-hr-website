@@ -95,11 +95,13 @@ textarea {
 }
 
 .language-toggle {
+  min-width: 64px;
   border: 0;
   color: rgba(255, 255, 255, 0.9);
   background: transparent;
   cursor: pointer;
   font-weight: 700;
+  text-align: center;
 }
 
 .language-toggle:hover,
@@ -109,6 +111,7 @@ textarea {
 
 #about,
 #services,
+#ai-robots,
 #jobs,
 #process,
 #faq,
@@ -301,6 +304,11 @@ body.lang-zh .hero-copy {
   gap: 14px;
 }
 
+.hero-actions {
+  min-height: 62px;
+  align-items: center;
+}
+
 .btn,
 .search-form button {
   min-height: 48px;
@@ -336,6 +344,23 @@ body.lang-zh .hero-copy {
 .btn-outline {
   color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.hero-actions .btn {
+  width: 220px;
+  min-height: 60px;
+  flex: 0 0 220px;
+  text-align: center;
+}
+
+.hero-actions .btn-primary {
+  width: 180px;
+  flex-basis: 180px;
+}
+
+.search-form button {
+  width: 120px;
+  flex: 0 0 120px;
 }
 
 .quick-search {
@@ -622,6 +647,158 @@ body.lang-zh .hero-copy {
 
 .service-card.is-hidden {
   display: none;
+}
+
+.ai-robots-section {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 78% 18%, rgba(215, 25, 32, 0.35), transparent 26%),
+    linear-gradient(135deg, #0b172e, #132b4f 48%, #07111f);
+}
+
+.ai-robots-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+  pointer-events: none;
+}
+
+.ai-robots-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 54px;
+  align-items: center;
+}
+
+.ai-robots-copy h2 {
+  max-width: 720px;
+  color: var(--white);
+  font-size: clamp(34px, 4.4vw, 54px);
+  line-height: 1.12;
+  margin-bottom: 22px;
+}
+
+.ai-robots-copy p {
+  max-width: 720px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.ai-robot-actions {
+  min-height: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.ai-robot-actions .btn {
+  width: 180px;
+  flex: 0 0 180px;
+}
+
+.btn-outline-dark {
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ai-robot-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.signal-card,
+.ai-dashboard {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(12px);
+}
+
+.signal-card {
+  position: relative;
+  padding: 28px 30px 28px 92px;
+  overflow: hidden;
+}
+
+.signal-card::after {
+  content: "";
+  position: absolute;
+  right: 26px;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #27d980;
+  box-shadow: 0 0 0 8px rgba(39, 217, 128, 0.12), 0 0 26px rgba(39, 217, 128, 0.7);
+}
+
+.signal-card span {
+  position: absolute;
+  left: 28px;
+  top: 30px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  background: var(--red);
+  border-radius: 6px;
+  font-weight: 900;
+}
+
+.signal-card h3 {
+  color: var(--white);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.signal-card p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.whatsapp-robot span {
+  background: #25d366;
+}
+
+.ai-dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+}
+
+.ai-dashboard div {
+  padding: 24px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.ai-dashboard strong,
+.ai-dashboard small {
+  display: block;
+}
+
+.ai-dashboard strong {
+  color: var(--white);
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.ai-dashboard small {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
 }
 
 .jobs-layout {
@@ -971,6 +1148,7 @@ body.lang-zh .hero-copy {
 
   .search-panel,
   .two-column,
+  .ai-robots-layout,
   .jobs-layout,
   .contact-grid,
   .faq-layout,
@@ -1039,6 +1217,13 @@ body.lang-zh .hero-copy {
     padding: 72px 0 124px;
   }
 
+  .hero-actions .btn,
+  .hero-actions .btn-primary,
+  .ai-robot-actions .btn {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
   .hero-copy {
     font-size: 17px;
   }
@@ -1063,6 +1248,19 @@ body.lang-zh .hero-copy {
 
   .section {
     padding: 70px 0;
+  }
+
+  .signal-card {
+    padding: 86px 22px 24px;
+  }
+
+  .signal-card span {
+    left: 22px;
+    top: 22px;
+  }
+
+  .ai-dashboard {
+    grid-template-columns: 1fr;
   }
 
   .image-block img,
