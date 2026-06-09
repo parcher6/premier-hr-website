@@ -6,7 +6,7 @@ const navLinks = Array.from(document.querySelectorAll('.main-nav a[href^="#"]'))
 const backTopButton = document.querySelector(".back-top");
 const contactForm = document.querySelector(".contact-form");
 const formWhatsapp = document.querySelector(".form-whatsapp");
-const phoneNumber = "19025082207";
+const phoneNumber = "6562210638";
 
 let currentLanguage = "en";
 
@@ -135,7 +135,7 @@ const zhText = {
   contactAddressLabel: "&#22320;&#22336;",
   contactPhoneLabel: "&#30005;&#35805; / WhatsApp",
   contactEmailLabel: "&#37038;&#31665;",
-  contactEmailValue: "&#24453;&#30830;&#35748;",
+  contactEmailValue: "lotusriverinvest@gmail.com",
   formName: "&#22995;&#21517;",
   formService: "&#38656;&#35201;&#30340;&#26381;&#21153;",
   formMessage: "&#30041;&#35328;",
