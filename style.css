@@ -236,7 +236,7 @@ textarea {
 
 .hero-section {
   position: relative;
-  min-height: 680px;
+  min-height: max(680px, calc(100svh - 124px));
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -1180,10 +1180,13 @@ body.lang-zh .hero-copy h1 {
   }
 
   .hero-section {
-    min-height: auto;
+    min-height: max(700px, calc(100svh - 142px));
+    align-items: start;
   }
 
   .hero-grid {
+    min-height: inherit;
+    align-content: center;
     padding: 72px 0 76px;
   }
 
