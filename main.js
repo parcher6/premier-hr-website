@@ -3,7 +3,6 @@ const mainNav = document.querySelector(".main-nav");
 const languageButtons = Array.from(document.querySelectorAll(".language-button"));
 const internalLinks = Array.from(document.querySelectorAll('a[href^="#"]'));
 const backTopButton = document.querySelector(".back-top");
-const themeToggle = document.querySelector(".theme-toggle");
 const dismissCard = document.querySelector(".dismiss-card");
 const trustCard = document.querySelector(".trust-card");
 const contactForm = document.querySelector(".contact-form");
@@ -32,7 +31,6 @@ document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
 const zhText = {
   audienceEmployer: "雇主",
   audienceJobSeeker: "求职者",
-  themeDark: "深色",
   brandSub: "新加坡持牌就业中介",
   navHome: "首页",
   navTrust: "资质",
@@ -165,10 +163,6 @@ const applyLanguage = (lang) => {
 };
 
 languageButtons.forEach((button) => button.addEventListener("click", () => applyLanguage(button.dataset.lang || "en")));
-
-themeToggle?.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
 
 menuButton?.addEventListener("click", () => {
   const isOpen = mainNav?.classList.toggle("is-open") || false;
