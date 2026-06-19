@@ -29,8 +29,6 @@ document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
 });
 
 const zhText = {
-  audienceEmployer: "雇主",
-  audienceJobSeeker: "求职者",
   brandSub: "新加坡持牌就业中介",
   navHome: "首页",
   navTrust: "资质",

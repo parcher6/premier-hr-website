@@ -15,7 +15,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 132px; }
+html { scroll-behavior: smooth; scroll-padding-top: 122px; }
 body {
   min-width: 320px;
   color: var(--ink);
@@ -32,18 +32,7 @@ button, input, select, textarea { font: inherit; }
 .site-header { position: sticky; top: 0; z-index: 50; box-shadow: 0 10px 26px rgba(8,42,74,.12); }
 .audience-bar { background: var(--blue-950); color: #dff5ff; }
 .audience-inner, .header-tools, .nav-inner, .brand, .main-nav, .hero-actions, .ai-actions, .footer-inner { display: flex; align-items: center; }
-.audience-inner { min-height: 58px; justify-content: space-between; gap: 24px; }
-.audience-tabs { display: flex; align-self: stretch; }
-.audience-tab {
-  min-width: 132px;
-  border: 0;
-  border-bottom: 4px solid transparent;
-  color: rgba(255,255,255,.7);
-  background: transparent;
-  font-weight: 800;
-  cursor: pointer;
-}
-.audience-tab.is-active { color: var(--white); border-bottom-color: var(--white); }
+.audience-inner { min-height: 48px; justify-content: flex-end; gap: 0; }
 .header-tools { gap: 14px; }
 .language-switch {
   display: inline-flex;
@@ -85,7 +74,7 @@ button, input, select, textarea { font: inherit; }
 
 .hero {
   position: relative;
-  min-height: max(620px, calc(100svh - 132px));
+  min-height: max(620px, calc(100svh - 122px));
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -205,7 +194,7 @@ body.lang-zh .hero h1 {
 
 @media (max-width: 1120px) {
   .menu-button { display: block; }
-  .main-nav { position: absolute; left: 0; right: 0; top: 132px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 20px; background: var(--blue-800); box-shadow: 0 20px 36px rgba(8,42,74,.18); }
+  .main-nav { position: absolute; left: 0; right: 0; top: 122px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 20px; background: var(--blue-800); box-shadow: 0 20px 36px rgba(8,42,74,.18); }
   .main-nav.is-open { display: flex; }
   .main-nav a { padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
   .trust-card, .ai-layout, .contact-layout { grid-template-columns: 1fr; }
@@ -213,17 +202,16 @@ body.lang-zh .hero h1 {
 }
 
 @media (max-width: 680px) {
-  html { scroll-padding-top: 148px; }
+  html { scroll-padding-top: 124px; }
   .container { width: min(100% - 28px, 1280px); }
-  .audience-inner { min-height: 82px; align-items: flex-start; flex-direction: column; gap: 8px; padding: 8px 0; }
-  .audience-tab { min-width: 112px; }
-  .header-tools { width: 100%; justify-content: space-between; }
+  .audience-inner { min-height: 48px; justify-content: flex-end; padding: 6px 0; }
+  .header-tools { width: auto; justify-content: flex-end; }
   .language-button { width: 72px; min-height: 30px; }
   .nav-inner { min-height: 76px; }
   .brand strong { font-size: 18px; }
   .brand small { font-size: 10px; }
-  .main-nav { top: 158px; }
-  .hero { min-height: max(690px, calc(100svh - 158px)); place-items: start center; }
+  .main-nav { top: 124px; }
+  .hero { min-height: max(690px, calc(100svh - 124px)); place-items: start center; }
   .hero-content { min-height: inherit; display: grid; align-content: center; padding: 58px 0 70px; text-align: left; }
   .hero-label { justify-self: start; }
   .hero h1 { justify-content: flex-start; max-width: 350px; min-height: 170px; font-size: 38px; line-height: 1.12; }
